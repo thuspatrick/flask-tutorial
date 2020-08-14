@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %} {{ title }} {% endblock title %}
+
+{% block content %}
+    <h1>Voici la liste des SUbscribers</h1>
+    
+    <ul>
+        {% for name in names %}
+            <li>{{ name }}</li>
+        {% endfor %}
+    </ul> 
+{% endblock content %} 
